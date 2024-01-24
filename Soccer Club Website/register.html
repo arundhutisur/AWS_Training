@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for league</title>
+</head>
+<body>
+    <nav style="border: 1.5px solid green;text-align: center; background-color: yellow; margin-left: 450px; margin-right: 450px;">
+        <a href="index.html" style="padding: 2px;border-right: 1px solid black">Home Page</a>
+        <a href="player.html" style="padding: 2px;border-right: 1px solid black;">Player</a>
+        <a href="admin.html" style="padding: 2px;">Admin</a>
+    </nav>
+    <form>
+        <div style="padding: 10px;">
+            <label for="name">Enter the Name</label>
+            <input type="text" onblur="func()" id="name" maxlength="16" minlength="5">
+        </div>
+        <div style="padding: 10px;">
+            <label for="league">Choose the League</label>
+            <input list="league">
+            <datalist id="league">
+                <option value="Victorious Secret">
+                <option value="Super League">
+                <option value="China League One League">
+            </datalist>
+        </div>
+        <div style="padding: 10px;">
+            <label for="year">Enter the Year</label>
+            <input list="year">
+            <datalist id="year">
+                <option value="2024">
+            </datalist>
+        </div>
+        <div style="padding-top: 10px; padding-left: 90px;">
+            <input onclick="alert('Data Submitted')" type="submit" value="Submit">
+        </div>
+    </form>
+    <script>
+        function func(){
+            let x=document.getElementById("name");
+        }
+    </script>
+
+</body>
+</html>
